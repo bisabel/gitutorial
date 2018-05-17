@@ -24,6 +24,19 @@ Dentro de una carpeta de un proyecto con git, comprobaremos su estado con
 Para listar el historico de cambios
   git log
 
+Realizando cambios y guardandolos
+--------------------------------
+He modificado un fichero y lo quiero llevar a staging area
+        git add fichero
+He creado un nuevo fichero y quiero que git haga seguimiento sobre el
+        git add fichero       
+Para sacar un fichero del staging area, sin perder las modificaciones que hay en él
+  git reset HEAD <fichero>
+Para deshacer las modificacions realizadas en un fichero  
+  git checkout -- <fichero>        
+  
+Quiero guardar los cambios que tengo en el staging area. creando un nuevo puento en el historico del proyecto.
+  git commit -m "mensaje descriptivo de los cambios que contiene"
 
 
 
