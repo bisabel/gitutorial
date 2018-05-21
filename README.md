@@ -38,5 +38,27 @@ Para deshacer las modificacions realizadas en un fichero
 Quiero guardar los cambios que tengo en el staging area. creando un nuevo puento en el historico del proyecto.
   git commit -m "mensaje descriptivo de los cambios que contiene"
 
+Trabajando con proyectos remotos
+--------------------------------
+Para ver los repositorios remotos de nuestro proyecto
+	git remote -v
+Para añadir un nuevo repositorio remoto 
+	git remote add <nombre> <url>
+Eliminar la referencia a un repositorio remoto
+	git remote rm <nombre>
+Si queremos traer la informacion de los posibles cambios de un repositorio remoto que hayan podido realizarse
+	git fetch <repositorio> Si no pasamos un nombre, por defecto entiende que es el repositorio origin
+
+Ramificaciones
+--------------
+Si queremos listar las ramas de trabajod e nuestro repositorio
+	git branch
+En el listado, aparecera un * para indicarnos en la rama en la que estemos situados actualmente
+Si queremos que nos liste las ramas de nuestro repositorio local, y el de los repositorios remotos.
+	git branch -r
+Para crear una nueva rama de trabajo y posicionarnos en ella
+	git branch <nombre>
+
+
 
 
