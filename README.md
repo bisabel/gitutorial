@@ -87,10 +87,16 @@ Si queremos que nos liste las ramas de nuestro repositorio local, y el de los re
 
 *git branch -r*
 
-Para crear una nueva rama de trabajo y posicionarnos en ella
+Para crear una nueva rama de trabajo, y luego, situarnos sobre ella, usamos los siguientes comandos
 
 *git branch <nombre>*
+  
+*git checkout <nombre>*
+  
+O bien, realizar los dos anteriores en uno solo con:
 
+*git checkout -b <nombre>*
+  
 
 Enviando y trayendo cambios del servidor
 ----------------------------------------
